@@ -14,12 +14,6 @@ class GeoIpService
 {
     public const NOT_A_CITY = 'Not a city';
 
-//    private $logger;
-//    public function __construct(LoggerInterface $logger)
-//    {
-//        $this->logger = $logger;
-//    }
-
     /**
      * @param $ip
      * @return array
