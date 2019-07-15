@@ -75,7 +75,7 @@ class PointService
         try {
             $this->em->flush();
         } catch (Exception $ex) {
-            throw new HttpException(ResponseAlias::HTTP_INTERNAL_SERVER_ERROR, 'Error during saving point to DB: ' . $ex->getMessage());
+            throw new HttpException(Response::HTTP_INTERNAL_SERVER_ERROR, 'Error during saving point to DB: ' . $ex->getMessage());
         }
 
         return $point;
